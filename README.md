@@ -1,7 +1,9 @@
 Need 1 to send and 1 (or more) to receive
 
 To change settings Pin SET needs to be LOW. To activate Serial Pin CS needs to be LOW.
+
 Connect  power and TX/RX. When you set CS to LOW, it will send "Wake" to serial port.  This is standard transparent mode.
+
 If you want to change settings make pin SET LOW. Now you can send AT commands
 eg. Send AT+CLSSC1 and it needs a carridge return, to send all GPIOs as input (button to LOW) 
 
