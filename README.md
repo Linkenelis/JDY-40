@@ -14,13 +14,13 @@ Can send serial to serial (transparent mode) standard CS-pin = LOW for both JDY-
 Can send IO-pin to IO-pin (CLSS = C0 or C1 for sender and CLSS = C2 ... C5 for receiver.) CS-pin = HIGH for both (not connected)
 
 Can send IO-pin to serial (CLSS = C0 or C1 for sender and CLSS = C2 ... C5 for receiver) CS-pin = HIGH for sender, Low for receiver.
-	You will get something like 03 AA 01 01 03 AA 01 00 (03 AA IO-pin state) here I am using C4 on receiver GPIO1 LOW (active button) GPIO1 HIGH button released
+	You will get something like 03 AA 01 01 03 AA 01 00 (03 AA IO-pin state) here I am using C4 on receiver GPIO1 LOW (active button) GPIO1 HIGH button released.
 
-Probably also serial to IO-pin, but not tested by me (yet)
+Probably also serial to IO-pin, but not tested by me (yet).
 
 
 Most common uses will be 
-	transparent, both devices on CLSS A0
+	transparent, both devices on CLSS A0.
 	IO-pin button to receiver output,  sender = CLSS C1 and receiver CLSS C4 is the simpelest version. Button pushed on sender, output HIGH on receiver. Button released and output goes LOW.
 	
 		C5 push button on sender and output goes HIGH. Release and it stays HIGH. New push will make it go LOW.
